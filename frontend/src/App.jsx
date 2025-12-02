@@ -8,11 +8,12 @@ import Product from './pages/Product.jsx'
 import PlaceOrder from './pages/PlaceOrder.jsx'
 import Cart from './pages/Cart.jsx'
 import Login from './pages/Login.jsx'
-
+import Navbar from './components/Navbar.jsx'
 
 const App = () => {
   return (
     <div className='px-4 sm:px-[5vw] md:px-[7vw] lg:px-[9vw]'>
+      <Navbar />
       <Routes>
         <Route path='/' element={<Home />} />
         <Route path='/about' element={<About />} />
